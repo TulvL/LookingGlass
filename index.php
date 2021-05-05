@@ -65,6 +65,15 @@ function getIP() {
 
     <!-- Styles -->
     <link href="assets/css/<?php echo $theme; ?>.min.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HECGG6V8YM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-HECGG6V8YM');
+    </script>
   </head>
   <body>
     <!-- Container -->
