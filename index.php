@@ -115,11 +115,11 @@ function getIP() {
                 </div>
                 <select name="cmd" class="input-medium" style="margin-left: 5px;">
                   <option value="host">host</option>
-                  <option value="mtr">mtr</option>
+                  <?php if (!empty($ipv4)) { echo '<option value="mtr">mtr</option>'; } ?>
                   <?php if (!empty($ipv6)) { echo '<option value="mtr6">mtr6</option>'; } ?>
-                  <option value="ping" selected="selected">ping</option>
-                  <?php if (!empty($ipv6)) { echo '<option value="ping6">ping6</option>'; } ?>
-                  <option value="traceroute">traceroute</option>
+                  <?php if (!empty($ipv4)) { echo '<option value="ping">ping</option>'; } ?>
+                  <?php if (!empty($ipv6)) { echo '<option value="ping6" selected="selected">ping6</option>'; } ?>
+                  <?php if (!empty($ipv4)) { echo '<option value="traceroute">traceroute</option>'; } ?>
                   <?php if (!empty($ipv6)) { echo '<option value="traceroute6">traceroute6</option>'; } ?>
                 </select>
                 <button type="submit" id="submit" name="submit" class="btn btn-primary" style="margin-left: 10px;">开始测试</button>
@@ -144,8 +144,7 @@ function getIP() {
       <!-- Footer -->
       <footer class="footer nohighlight">
         <p class="pull-right">
-            <a href="<?php echo $siteUrl . "/en.php"; ?>">English</a>
-            <a href="#">回到顶部</a>
+            <a href="https://ipv6.stream/">回到首页</a>
         </p>
         <p>Modified by <a href="https://github.com/ILLKX/LookingGlass">LookingGlass</a> - Powered by <a href="https://github.com/telephone/LookingGlass">LookingGlass</a></p>
       </footer>
