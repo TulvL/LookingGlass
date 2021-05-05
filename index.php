@@ -159,7 +159,7 @@ function getIP() {
       <!-- Footer -->
       <footer class="footer nohighlight">
         <p class="pull-right">
-            <a href="///">测速站</a>
+            <a href="../">测速站</a>　
             <a href="https://ipv6.stream/">回到首页</a>
         </p>
         <p>Modified by <a href="https://github.com/ILLKX/LookingGlass">LookingGlass</a> - Powered by <a href="https://github.com/telephone/LookingGlass">LookingGlass</a></p>
