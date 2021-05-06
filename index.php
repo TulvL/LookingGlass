@@ -129,7 +129,9 @@ function getIP() {
                   </div>
                 </div>
                 <select name="cmd" class="input-medium" style="margin-left: 5px;">
-                  <option value="host">host</option>
+                  
+                  <?php if (!empty($ipv4)) { echo '<option value="host">host</option>'; } ?>
+                  <?php if (!empty($ipv6)) { echo '<option value="host6">host6</option>'; } ?>                  
                   <?php if (!empty($ipv4)) { echo '<option value="mtr">mtr</option>'; } ?>
                   <?php if (!empty($ipv6)) { echo '<option value="mtr6">mtr6</option>'; } ?>
                   <?php if (!empty($ipv4)) { echo '<option value="ping">ping</option>'; } ?>
